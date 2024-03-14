@@ -29,6 +29,21 @@ async function run() {
 
         const database = client.db('productDB');
         const productCollection = database.collection('product');
+        const categoryCollection = database.collection('category');
+
+        // Brand names and their associated images
+        app.get('/allCategory', async (req, res) => {
+            const cursor = categoryCollection.find();
+            const result = await cursor.toArray();
+            res.send(result);
+        })
+
+        // Get all products data
+        app.get('/addProduct', async (req, res) => {
+            const cursor = productCollection.find();
+            const result = await cursor.toArray();
+            res.send(result);
+        })
 
         app.post('/addProduct', async (req, res) => {
             const newProduct = req.body;
@@ -36,6 +51,14 @@ async function run() {
             const result = await productCollection.insertOne(newProduct);
             res.send(result);
         })
+
+        // Get the products data based on brand-name
+        app.get('/products/:brand', async (req, res) => {
+            const brandName = req.params.brand;
+            const cursor = productCollection.find({ brand: brandName });
+            const result = await cursor.toArray();
+            res.send(result);
+        });
 
 
         // Send a ping to confirm a successful connection
