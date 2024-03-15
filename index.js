@@ -32,20 +32,20 @@ async function run() {
         const categoryCollection = database.collection('category');
 
         // Brand names and their associated images
-        app.get('/allCategory', async (req, res) => {
+        app.get('/allCategories', async (req, res) => {
             const cursor = categoryCollection.find();
             const result = await cursor.toArray();
             res.send(result);
         })
 
         // Get all products data
-        app.get('/addProduct', async (req, res) => {
+        app.get('/allProducts', async (req, res) => {
             const cursor = productCollection.find();
             const result = await cursor.toArray();
             res.send(result);
         })
 
-        app.post('/addProduct', async (req, res) => {
+        app.post('/allProducts', async (req, res) => {
             const newProduct = req.body;
             console.log(newProduct);
             const result = await productCollection.insertOne(newProduct);
