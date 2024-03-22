@@ -30,6 +30,7 @@ async function run() {
         const database = client.db('productDB');
         const productCollection = database.collection('product');
         const categoryCollection = database.collection('category');
+        const cartCollection = database.collection('cart');
 
         // Brand names and their associated images
         app.get('/allCategories', async (req, res) => {
@@ -68,6 +69,12 @@ async function run() {
             res.send(result);
         })
 
+        // Add to Cart products
+        app.post('/addToCart', async (req, res) => {
+            const newCart = req.body;
+            const result = await cartCollection.insertOne(newCart);
+            res.send(result);
+        })
 
         // Send a ping to confirm a successful connection
         await client.db("admin").command({ ping: 1 });
