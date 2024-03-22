@@ -70,6 +70,12 @@ async function run() {
         })
 
         // Add to Cart products
+        app.get('/addToCart', async (req, res) => {
+            const cursor = cartCollection.find();
+            const result = await cursor.toArray();
+            res.send(result);
+        })
+
         app.post('/addToCart', async (req, res) => {
             const newCart = req.body;
             const result = await cartCollection.insertOne(newCart);
