@@ -11,12 +11,8 @@ GadgetHub Server Side is responsible for handling user authentication, managing 
 
 ## Key Features
 
-- User authentication using JWT (JSON Web Tokens).
-- Secure password storage with bcrypt hashing.
 - RESTful API endpoints for user authentication, product management, and cart functionality.
-- Integration with Firebase Firestore for database storage.
 - Error handling middleware for managing HTTP errors.
-- Express Validator for input validation and sanitization.
 - Middleware for authentication and authorization.
 
 
@@ -28,10 +24,6 @@ Vercel :
 
 - Node.js
 - Express.js
-- Firebase Firestore
-- JSON Web Tokens (JWT)
-- Bcrypt
-- Express Validator
 
 ## Installation
 
