@@ -24,6 +24,7 @@ Vercel :
 
 - Node.js
 - Express.js
+- MongoDB
 
 ## Installation
 
