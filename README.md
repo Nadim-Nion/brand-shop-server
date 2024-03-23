@@ -52,7 +52,7 @@ GadgetHub Server Side is responsible for handling user authentication, managing 
 
 ## Deployment (Backend API)
 
-Vercel : 
+Vercel : https://brand-shop-server-six-gules.vercel.app/
 
 ## Technologies Used
 
