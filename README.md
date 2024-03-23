@@ -11,9 +11,43 @@ GadgetHub Server Side is responsible for handling user authentication, managing 
 
 ## Key Features
 
+- Backend server implementation for the GadgetHub website.
+- Handles user authentication, product management, and cart functionality.
+- Communicates with the client-side application for data exchange.
 - RESTful API endpoints for user authentication, product management, and cart functionality.
 - Error handling middleware for managing HTTP errors.
 - Middleware for authentication and authorization.
+
+## Folder Structure:
+- **/src**: Contains the source code for the server application.
+  - **/controllers**: Contains controllers for handling different routes and business logic.
+  - **/models**: Contains database models and schemas.
+  - **/routes**: Contains route definitions.
+  - **/utils**: Contains utility functions.
+- **/config**: Contains configuration files (e.g., Firebase config).
+- **/test**: Contains test scripts (optional).
+- **/docs**: Contains documentation (e.g., API documentation).
+
+## Key Functionalities:
+1. User Authentication:
+   - Implement registration and login endpoints.
+   - Validate user credentials.
+   - Provide JWT tokens upon successful authentication.
+
+2. Product Management:
+   - Implement CRUD operations for products.
+   - Secure product-related endpoints with authentication middleware.
+
+3. Cart Management:
+   - Implement endpoints for adding, viewing, and removing products from the cart.
+   - Associate cart data with user IDs.
+
+4. Error Handling:
+   - Implement error handling middleware to catch and respond to errors uniformly.
+
+5. Integration with Firebase:
+   - Configure Firebase SDK for authentication and database operations.
+
 
 
 ## Deployment (Backend API)
