@@ -38,7 +38,7 @@ Vercel :
 1. Clone the repository:
 
 ```
-git clone <repository-url>
+git clone https://github.com/Nadim-Nion/brand-shop-server
 cd GadgetHub-Server-Side
 ```
 
