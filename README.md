@@ -112,4 +112,43 @@ Contributions are welcome! Please open a pull request for any improvements, bug 
 
 This project is licensed under the [MIT License](LICENSE).
 
+## 🚀 About Me
+Hi, I am Nadim Mahmud Nion. I have recently concluded my graduation from the department of Computer Science and Engineering (CSE) at the Daffodil International University (DIU). I have been learning MERN Stack Web Development since 2022. I am expertise in the following skills:
+
+* React 
+
+* Express.js 
+
+* Node.js 
+
+* MongoDB
+
+* Vite
+
+* React Router
+
+* Firebase
+
+* Vercel
+
+* JavaScript
+
+* Advanced JavaScript
+
+* Daisy UI 
+
+* Bootstrap
+
+* Tailwind
+
+* HTML5
+
+* CSS3
+
+* Media Query
+
+I have built multiple projects using these skills. You are invited to my GitHub profile to know about my projects and don't forget to give a star to my projects.
+
+
+
 ---
